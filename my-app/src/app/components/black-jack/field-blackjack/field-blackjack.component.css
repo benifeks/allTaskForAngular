@@ -1,0 +1,40 @@
+.field {
+  margin-top: 3px;
+  margin-bottom: 30px;
+}
+
+.cardDeck {
+  margin-right: 2px;
+  color: wheat;
+  margin-left: 2px;
+  box-shadow: 6px 8px 10px 1px #000;
+  border-radius: 10px;
+  background: radial-gradient(#000 0%, #7b1672 100%);
+  width: 80px;
+  height: 120px;
+  border: 2px solid;
+  font-size: 30px;
+  text-align: center;
+}
+
+.cardDeckOpen {
+  margin-right: 2px;
+  color: black;
+  margin-left: 2px;
+  box-shadow: 6px 8px 10px 1px #000;
+  border-radius: 10px;
+  background: radial-gradient(#FFFFE0 0%, #BDB76B 70%);
+  width: 80px;
+  height: 120px;
+  border: 2px solid;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-container {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+}
+

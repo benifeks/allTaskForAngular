@@ -1,0 +1,16 @@
+<h3>horses-block:</h3>
+<div class="horses-block">
+  <app-fields [fieldsDataHorses]="horsesDataHorses" #counter></app-fields>
+
+  <div ngClass="containerDice">
+    <button ngClass="buttonRollDice" (click)="rollTheDice()">Roll Dice</button>
+    <div ngClass="meter">
+      dice are thrown <span style="color: red">{{ meter }}</span> times
+    </div>
+  </div>
+
+  <app-side-bar
+    [sideBarDataHorses]="horsesDataHorses"
+    (outCounterValue)="addCounterValue($event)"
+  ></app-side-bar>
+</div>

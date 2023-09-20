@@ -1,0 +1,22 @@
+<div ngClass="field">
+  <div class="flex-container">
+    <ng-container *ngIf="cardsPlayerArr.length">
+      <div class="cardDeckOpen" *ngFor="let item of cardsPlayerArr">
+        {{ item }}
+      </div>
+    </ng-container>
+  </div>
+
+  <div class="cardDeck" style="margin-top: 30px; margin-bottom: 5px"></div>
+
+  <div class="flex-container">
+    <ng-container class="flex-container" *ngIf="cardsBanrirArr.length">
+      <div
+        class="cardDeck"
+        [ngClass]="currentClasses"
+        *ngFor="let item of cardsBanrirArr">
+        {{ item }}
+      </div>
+    </ng-container>
+  </div>
+</div>

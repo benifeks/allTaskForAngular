@@ -1,0 +1,22 @@
+<div ngClass="scoreboard">
+  {{ fieldsDataHorses.nameRed }} run:&nbsp;<span ngClass="run">{{
+    fieldsDataHorses.runRed
+  }}</span
+  >&nbsp;&nbsp;&nbsp; {{ fieldsDataHorses.nameGreen }} run:&nbsp;<span
+    ngClass="run"
+    >{{ fieldsDataHorses.runGreen }}</span
+  >&nbsp;&nbsp;&nbsp;{{ fieldsDataHorses.nameBlue }} run:&nbsp;<span
+    ngClass="run"
+    >{{ fieldsDataHorses.runBlue }}</span
+  >
+</div>
+
+<img ngClass="dice" src="assets/img/n{{ fieldsDataHorses.runRed }}.png" />
+<img ngClass="dice" src="assets/img/n{{ fieldsDataHorses.runGreen }}.png" />
+<img ngClass="dice" src="assets/img/n{{ fieldsDataHorses.runBlue }}.png" />
+
+<div ngClass="containerHorses">
+  <img ngClass="horse" #divRefRed src="assets/img/icons1.png" />
+  <img ngClass="horse" #divRefGreen src="assets/img/icons2.png" />
+  <img ngClass="horse" #divRefBlue src="assets/img/icons3.png" />
+</div>

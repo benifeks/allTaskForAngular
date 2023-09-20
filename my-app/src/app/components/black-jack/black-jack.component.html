@@ -1,0 +1,36 @@
+<h3>black-jack-block:</h3>
+<div ngClass="black-jack-block">
+  <button [disabled]="cardBets.disableGame" (click)="startGame()">
+    новая игра
+  </button>
+
+  <app-venture
+    [ventureCardBest]="cardBets"
+    (outVenture)="getInputVenture($event)"
+  ></app-venture>
+
+  <div style="color: white">
+    Ваши деньги: &nbsp;{{ cardBets.moneyPlayer }}$ &nbsp; &nbsp; &nbsp;Ваша
+    ставка: &nbsp;{{ cardBets.ventures }}$ &nbsp; &nbsp; &nbsp;Ставка банка:
+    &nbsp;{{ cardBets.ventures }}$
+  </div>
+
+  <div style="color: white">{{ cardBets.resultVenture }}</div>
+
+  <app-field-blackjack [fieldDataBJ]="dataBlackJack"></app-field-blackjack>
+  <app-sidebar-blackjack [sideBarBJ]="dataBlackJack"></app-sidebar-blackjack>
+
+  <div ngClass="buttonBlock">
+    <button
+      class="button"
+      (click)="shuffleDeckAndStart()"
+      [disabled]="disableShufle"
+    >
+      тасовать</button
+    ><br />
+    <button class="button" (click)="takeCardPlayer()" [disabled]="disable">
+      взять</button
+    ><br />
+    <button class="button" (click)="pass()" [disabled]="disable">пас</button>
+  </div>
+</div>

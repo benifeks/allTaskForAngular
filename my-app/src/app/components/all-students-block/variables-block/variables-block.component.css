@@ -1,0 +1,16 @@
+.button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.variablesRed {
+  background-color: rgb(233, 177, 214);
+  margin-top: 5px;
+  padding-left: 20px;
+}
+
+.variablesGreene {
+  background-color: rgb(151, 233, 163);
+  margin-top: 5px;
+  padding-left: 20px;
+}

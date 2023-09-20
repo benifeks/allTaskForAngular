@@ -1,0 +1,28 @@
+.horses-block {
+  border: 3px solid black;
+  background-color: rgb(222, 241, 244);
+}
+
+.buttonRollDice {
+  margin-left: 7px;
+  margin-top: 10px;
+  height: 30px;
+  background-color: rgb(80, 230, 80);
+}
+
+.containerDice {
+  display: flex;
+  flex-direction: row;
+}
+
+.meter {
+  border: 2px solid black;
+  background-color: bisque;
+  height: 23.5px;
+  margin-left: 7px;
+  margin-top: 10px;
+  text-align: center;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 3px;
+}

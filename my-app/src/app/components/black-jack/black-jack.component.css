@@ -1,0 +1,14 @@
+.black-jack-block {
+  border: 3px solid black;
+  background: radial-gradient(#07540f 0%, #000 100%);
+}
+
+.buttonBlock {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.button {
+  margin-left: 5px;
+}

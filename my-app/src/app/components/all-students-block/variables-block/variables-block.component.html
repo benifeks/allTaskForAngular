@@ -1,0 +1,19 @@
+<app-input-block (outEnterName)="addName($event)"></app-input-block>
+<div [ngClass]="currentClasses">
+  <div>
+    <button class="button" on-click="changeTheme()" *ngIf="condition">
+      {{ messageGreene }}
+    </button>
+  </div>
+  <div>
+    <button class="button" on-click="changeTheme()" *ngIf="!condition">
+      {{ messageRed }}
+    </button>
+  </div>
+  {{ titles.titleAllStudents }}
+  <div *ngFor="let item of students">
+    <app-student-block [givenstudent]="item" [title]="titles"
+      >{{ titles.titleOneStudent }}{{ item.name }}</app-student-block
+    >
+  </div>
+</div>
